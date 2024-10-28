@@ -1,8 +1,6 @@
 def swappListElements(x, indexOne, indexTwo):
     swappedList = list(x)
-    tmp = swappedList[indexOne]
-    swappedList[indexOne] = swappedList[indexTwo]
-    swappedList[indexTwo] = tmp
+    swappedList[indexOne], swappedList[indexTwo] = swappedList[indexTwo], swappedList[indexOne]
     return swappedList
  
 if __name__ == "__main__":
